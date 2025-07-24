@@ -1,0 +1,65 @@
+/* Base Container */
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+/* Stars Wrapper */
+.stars-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Star Styles */
+.star {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ccc;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+/* Colors */
+.colored {
+  color: #f4c150;
+}
+
+.unColor {
+  color: #ccc;
+}
+
+/* Rating Text */
+.rating-text {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 500px) {
+  .star {
+    font-size: 2.2rem;
+  }
+
+  .rating-container {
+    padding: 20px;
+  }
+
+  .rating-text {
+    font-size: 1rem;
+  }
+}
